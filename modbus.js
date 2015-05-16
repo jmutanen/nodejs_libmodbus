@@ -997,7 +997,7 @@ function createMasterRtu(a, con, cbs) {
 	api.destroy = function () {
 		isWorking = false;
 		
-		mb.close(ctx);
+		mb.close_mt(ctx);
 		mb.free(ctx);
 		
 		ctx = null;
